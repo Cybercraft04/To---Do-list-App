@@ -1,0 +1,123 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box ;
+}
+.container{
+    width:100%;
+    min-height:100vh;
+    background-image:linear-gradient(75deg,purple,indigo,blue);
+    padding:9px;
+}
+.todo-app{
+    width:100%;
+    max-width:540px;
+    background:#fff;
+    margin:100px auto 20px;
+    padding:40px 30px 70px;
+    border-radius:10px;
+}
+.todo-app h2{
+    color:#000;
+    display:flex;
+    align-items:center;
+    margin-bottom:20px;
+}
+.row{
+ display:flex;
+ align-items:center;
+ justify-content:space-between;
+ background:black;
+ border-radius:30px;
+ padding-left:20px;
+ margin-bottom:25px;
+}
+input{
+    flex:1;
+    border:none;
+    background:black;
+    outline:none;
+    padding:10px;
+    font-weight:20px;
+}
+input:hover{
+   font-weight:bold;
+   color:white;
+}
+button{
+    border:none;
+    outline:none;
+    margin-left:-80px;
+    padding:16px 50px;
+    background-image:linear-gradient(45deg,purple,indigo,blue);
+    font-size:16px;
+    color:#fff;
+    cursor:pointer;
+    border-radius:40px;
+}
+button:hover{
+    background-image:linear-gradient(45deg,blue,indigo,purple);
+}
+
+ul li {
+    list-style:none;
+    font-size:17px;
+    padding:12px 8px 12px 50px;
+    user-select:none;
+    cursor:pointer;
+}
+ul li::before{
+    content:'';
+    position:absolute;
+    height:20px;
+    width:20px;
+    border-radius:50%;
+   margin-left:-45px;
+   background-color:black;
+}
+ul li.checked{
+    color:#555;
+    text-decoration:line-through;
+}
+ul li.checked::before{
+ content:'√';
+ padding:3px;
+ color:green;
+ background:none;
+ border-color:black;
+ font-size:20px;
+ text-align:center;
+}
+ul li span{
+    position:absolute;
+    right:0;
+    top:5px;
+    width:40px;
+    height:40px;
+    font-size:22px;
+    color:#555;
+    background:white;
+    text-align:center;
+    line-height:40px;
+}
+ul li span:hover{
+    background:#edeef0;
+}
+.button{
+    height:50px;
+    width:130px;
+    font-weight:bold;
+    font-size:25px;
+    background-image:linear-gradient(70deg,red,maroon);
+    align-items:center;
+    display:flex;
+    padding:20px;
+    margin-left:100px;
+    text-align:center;
+    border-radius:50px; 
+    
+}
+a:link{
+    color:white;
+    text-decoration:none;
+}
